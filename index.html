@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Andrade e Teixeira</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: transparent;
+            position: relative;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #1B263F;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        .back-button:hover {
+            color: #94502C;
+        }
+
+        .back-button i {
+            margin-right: 5px;
+        }
+
+        .login-form {
+            background-color: #fff;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .login-form h2 {
+            font-size: 2rem;
+            color: #1B263F;
+            margin-bottom: 1rem;
+        }
+
+        .login-form img.logo {
+            max-width: 350px;
+            margin-bottom: 1.5rem;
+        }
+
+        .login-form label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #666;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .login-form input[type="submit"] {
+            width: 100%;
+            padding: 0.85rem;
+            background-color: #1B263F;
+            color: #fff;
+            font-weight: bold;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login-form input[type="submit"]:hover {
+            background-color: #94502C;
+        }
+
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-color: transparent;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+
+        .whatsapp-button img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+<a href="https://andradeeteixeira.adv.br/victor3" class="back-button">
+    <i>&larr;</i> Voltar
+</a>
+
+<div class="login-form">
+    <h2>Área do Cliente</h2>
+    <img src="https://static.wixstatic.com/media/681d12_3fe8427f86d74fb79fa3eef758dd92d9~mv2.png" alt="Logo Andrade e Teixeira" class="logo">
+
+    <form name="form" method="post" action="https://www.siteadv.com.br/andradeeteixeira/ExternalLogin.aspx?id=10036">
+        <label>Login:</label>
+        <input type="text" name="login" required><br>
+        
+        <label>Senha:</label>
+        <input type="password" name="senha" required><br>
+        
+        <input type="submit" value="Entrar">
+    </form>
+</div>
+
+<!-- Botão do WhatsApp -->
+<a href="https://wa.me/552720182108" class="whatsapp-button" target="_blank" title="Fale conosco pelo WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+</body>
+</html>
